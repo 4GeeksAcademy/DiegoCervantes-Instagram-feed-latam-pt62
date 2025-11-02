@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-xxl">
+                    <a class="navbar-brand">Instagram</a>
+                    <form class="d-flex">
+                        <div>
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Create a new post
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Caption:</p>
+                        <br>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Add the caption of your post here"></textarea>
+                        </div>
+                        <div>
+                            <div class="container ">
+                                <button type="button" class="btn btn-secondary"><i
+                                        class="fa-solid fa-camera"></i></button>
+                                <button type="button" class="btn btn-secondary"><i
+                                        class="fa-solid fa-location-dot"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                            class="fa-solid fa-square"></i></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                            class="fa-solid fa-table-cells-large"></i></button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+                    <div class="container">
+                        <br>
+                        <br>
+                        <div class="card " style="width: 55rem;">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <div><strong>✨ Inspírate y crea tu propio espacio de ideas ✨</strong></div>
+                                    <div>1/25</div>
+                                </div>
+                            </div>
+                            <img src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I"
+                                class="card-img-top" alt="..." style="height: 55rem;">
+                            <div class="card-body">
+                                <p class="card-text">Un escritorio ordenado puede ser el punto de partida para grandes
+                                    proyectos. 🌿📚 Entre libros, colores y tecnología, nacen las ideas que transforman
+                                    lo cotidiano en algo extraordinario. 🚀
+                                    Ya sea que estudies, trabajes o sueñes, dedica un rincón solo para ti y deja fluir
+                                    la creatividad. 💡💻
+
+                                    #Creatividad #Diseño #Productividad #InspoDesk #WorkspaceGoals #EstudioCreativop>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <br>
+                            <br>
+                            <div class="card " style="width: 55rem; ">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div><strong>🌫️ Caminos que invitan a perderse 🌳</strong></div>
+                                        <div>3/12</div>
+                                    </div>
+                                </div>
+                                <img src="https://fastly.picsum.photos/id/70/3011/2000.jpg?hmac=-npCfe1kpGYW7HcBlZvrEZ9Qb_EdiGLbDxE26amgotM"
+                                    class="card-img-top" alt="..." style="height: 55rem;">
+                                <div class="card-body">
+                                    <p class="card-text">A veces no se trata de llegar rápido, sino de disfrutar el
+                                        trayecto. 🚗✨
+                                        Entre la niebla y los árboles, el silencio se vuelve compañía y el camino, una
+                                        pausa para respirar. 🌲💭
+                                        Cada curva guarda un suspiro, cada kilómetro una historia.
+
+                                        #Viaje #Naturaleza #Carretera #Reflexión #PazInterior #Camino #Aventura</p>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <br>
+                                <br>
+                                <div class="card " style="width: 55rem;">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div><strong>🍇 La dulzura de lo simple 🍇</strong></div>
+                                            <div>12/7</div>
+                                        </div>
+                                    </div>
+                                    <img src="https://fastly.picsum.photos/id/75/1999/2998.jpg?hmac=0agRZd8c5CRiFvADOWJqfTv6lqYBty3Kw-9LEtLp_98"
+                                        class="card-img-top" alt="..." style="height: 55rem;">
+                                    <div class="card-body">
+                                        <p class="card-text">Un racimo de uvas, un recordatorio de que las cosas más
+                                            sencillas pueden tener el sabor más especial. ✨
+                                            Cada fruto cuenta una historia de sol, tierra y paciencia. 🌞🌿
+                                            Disfruta los pequeños momentos… ahí está la verdadera abundancia. 💜
+
+                                            #Naturaleza #Uvas #VidaSimple #SaborNatural #MomentosDulces #Campo
+                                            #Frescurap>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
+                    <br>
+                    <br>
+                    <div class="container-fluid text-center">
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                <img src="https://fastly.picsum.photos/id/19/2500/1667.jpg?hmac=7epGozH4QjToGaBf_xb2HbFTXoV5o8n_cYzB7I4lt6g"
+                                    alt="" style="width: 100%; height: 100%;">
+                            </div>
+                            <div class="col-4">
+                                <img src="https://fastly.picsum.photos/id/22/4434/3729.jpg?hmac=fjZdkSMZJNFgsoDh8Qo5zdA_nSGUAWvKLyyqmEt2xs0"
+                                    alt="" style="width: 100%; height: 100%;">
+                            </div>
+                            <div class="col-4">
+                                <img src="https://fastly.picsum.photos/id/24/4855/1803.jpg?hmac=ICVhP1pUXDLXaTkgwDJinSUS59UWalMxf4SOIWb9Ui4"
+                                    alt="" style="width: 100%; height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="container-fluid text-center">
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                <img src="https://fastly.picsum.photos/id/28/4928/3264.jpg?hmac=GnYF-RnBUg44PFfU5pcw_Qs0ReOyStdnZ8MtQWJqTfA"
+                                    alt="" style="width: 100%; height: 100%;">
+                            </div>
+                            <div class="col-4">
+                                <img src="https://fastly.picsum.photos/id/34/3872/2592.jpg?hmac=4o5QGDd7eVRX8_ISsc5ZzGrHsFYDoanmcsz7kyu8A9A"
+                                    alt="" style="width: 100%; height: 100%;">
+                            </div>
+                            <div class="col-4">
+                                <img src="https://fastly.picsum.photos/id/36/4179/2790.jpg?hmac=OCuYYm0PkDCMwxWhrtoSefG5UDir4O0XCcR2x-aSPjs"
+                                    alt="" style="width: 100%; height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="container-fluid text-center">
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                <img src="https://fastly.picsum.photos/id/39/3456/2304.jpg?hmac=cc_VPxzydwTUbGEtpsDeo2NxCkeYQrhTLqw4TFo-dIg"
+                                    alt="" style="width: 100%; height: 100%;">
+                            </div>
+                            <div class="col-4">
+                                <img src="https://fastly.picsum.photos/id/55/4608/3072.jpg?hmac=ahGhylwdN52ULB37deeMZX6T_G7NiERtoPhwydMvUKQ"
+                                    alt="" style="width: 100%; height: 100%;">
+                            </div>
+                            <div class="col-4">
+                                <img src="https://fastly.picsum.photos/id/63/5000/2813.jpg?hmac=HvaeSK6WT-G9bYF_CyB2m1ARQirL8UMnygdU9W6PDvM"
+                                    alt="" style="width: 100%; height: 100%;">
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
